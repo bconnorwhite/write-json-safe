@@ -12,20 +12,15 @@
     "safe"
   ],
   "scripts": {
-    "build": "babel ./src --out-dir ./build --config-file ./babel.config.json --extensions .ts --delete-dir-on-start && tsc --project ./tsconfig.json",
+    "build": "bob build",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "stringify-json-object": "^1.0.1",
-    "write-file-safe": "^1.0.2"
+    "stringify-json-object": "^1.0.4",
+    "write-file-safe": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-typescript": "^7.10.4",
-    "@types/node": "^14.6.1",
-    "typescript": "^4.0.2"
+    "@bconnorwhite/bob": "^1.9.7",
+    "@types/node": "^14.6.1"
   }
 }
