@@ -1,6 +1,6 @@
 {
   "name": "write-json-safe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write formatted JSON to a file, and create parent directories if necessary.",
   "main": "./build/index.js",
   "homepage": "https://connorwhite.org/github/write-json-safe",
