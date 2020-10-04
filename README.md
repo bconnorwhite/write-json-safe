@@ -79,4 +79,7 @@ type Options = {
 
 ## Related Packages
 
+- [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
+- [read-json-safe](https://www.npmjs.com/package/read-json-safe): Read JSON files without try catch
 - [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files, and create parent directories if necessary
+- [write-md-safe](https://www.npmjs.com/package/write-md-safe): Write markdown files from a [Marked](https://www.npmjs.com/package/marked) token list or string
