@@ -1,32 +1,57 @@
 {
   "name": "write-json-safe",
   "version": "1.0.1",
-  "description": "Write formatted JSON to a file, and create parent directories if necessary.",
-  "main": "./build/index.js",
+  "description": "Write formatted JSON to a file",
+  "license": "MIT",
+  "author": "Connor White",
   "homepage": "https://connorwhite.org/github/write-json-safe",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/write-json-safe.git"
   },
-  "author": "Connor White",
-  "license": "MIT",
   "keywords": [
     "write",
     "file",
     "json",
-    "safe"
+    "safe",
+    "pretty",
+    "formatted",
+    "format",
+    "output",
+    "recursive",
+    "parent",
+    "newline"
   ],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build",
-    "postversion": "git push"
+    "commit": "bob commit",
+    "lint": "bob lint",
+    "release": "bob publish",
+    "test": "bob test"
   },
   "dependencies": {
-    "stringify-json-object": "^1.0.4",
-    "write-file-safe": "^1.0.3"
+    "stringify-json-object": "^1.0.6",
+    "write-file-safe": "^1.2.0"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.7",
-    "@types/node": "^14.6.1"
+    "@bconnorwhite/bob": "^2.9.2",
+    "@types/mock-fs": "^4.10.0",
+    "mock-fs": "^4.13.0",
+    "read-file-safe": "^1.0.8"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
   }
 }
