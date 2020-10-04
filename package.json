@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "stringify-json-object": "^1.0.6",
-    "write-file-safe": "^1.2.0"
+    "write-file-safe": "^1.2.1"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.9.2",

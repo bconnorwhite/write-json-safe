@@ -8404,7 +8404,7 @@ write-file-atomic@^3.0.0:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
-write-file-safe@^1.0.2, write-file-safe@^1.2.0:
+write-file-safe@^1.0.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.2.0.tgz#04c18feeec485e33255ad1188a8534a4638436e7"
   integrity sha512-LsJgvKmfQ0ZahHTfioXKaOW7B9DBOFMBa11+dhR7wvBtQCbSHQu+0jYYdg+Yonr3lpIZG+glcRV54EJGxGm8Gg==
@@ -8416,6 +8416,14 @@ write-file-safe@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.0.3.tgz#6e259879617da395a641296d459e13d3ea36575f"
   integrity sha512-bdAWuzoYTLhVmAvKU7MIy2tWUs6afawPrOaktl6YBGk28LRh5RphDLDAqoXXe2j9ZvLeh+fAblnhQ6wZ0hd+iQ==
+
+write-file-safe@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.2.1.tgz#5d9fb2eb67fd00bea160e6ad1f0cf91cd4a76ecd"
+  integrity sha512-LoEMhmtfacEeLO8aMF/NoFbJ1RPVOf5tOhu1ugBjnG+OUhphLT532+zXB4ag6x8KXevwlOiO940WuV8hvMJOGQ==
+  dependencies:
+    terminating-newline "^1.2.4"
+    write-dir-safe "^1.0.0"
 
 write-json-safe@^1.0.0:
   version "1.0.1"
