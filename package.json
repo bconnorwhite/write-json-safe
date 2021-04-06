@@ -34,14 +34,14 @@
     "test": "bob test"
   },
   "dependencies": {
-    "stringify-json-object": "^1.0.6",
-    "write-file-safe": "^1.2.1"
+    "stringify-json-object": "^1.0.7",
+    "write-file-safe": "^1.2.3"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.9.2",
-    "@types/mock-fs": "^4.10.0",
+    "@bconnorwhite/bob": "^2.9.4",
+    "@types/mock-fs": "^4.13.0",
     "mock-fs": "^4.13.0",
-    "read-file-safe": "^1.0.8"
+    "read-file-safe": "^1.0.10"
   },
   "eslintConfig": {
     "extends": "eslint-config-bob"

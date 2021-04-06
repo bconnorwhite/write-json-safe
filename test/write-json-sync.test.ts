@@ -6,7 +6,7 @@ import { writeJSONSync } from "../source";
 beforeEach(async () => {
   mock({
     "/test": {}
-  })
+  });
 });
 
 afterEach(async () => {

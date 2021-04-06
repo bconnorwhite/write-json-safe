@@ -24,4 +24,4 @@ export function writeJSONSync(path: string, content?: JSONObject, options?: Opti
 
 export {
   JSONObject
-}
+};

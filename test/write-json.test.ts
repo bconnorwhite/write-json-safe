@@ -6,7 +6,7 @@ import { writeJSON } from "../source";
 beforeEach(async () => {
   mock({
     "/test": {}
-  })
+  });
 });
 
 afterEach(async () => {
@@ -14,7 +14,7 @@ afterEach(async () => {
 });
 
 test("write", async () => {
-  return writeJSON("/test/file.json", { ok: true }).then((success) => {
+  return writeJSON("/test/file.json", { ok: true }).then(async (success) => {
     expect(success).toBe(true);
     return readFile("/test/file.json").then((text) => {
       expect(text).toBe('{\n  "ok": true\n}\n');
@@ -23,7 +23,7 @@ test("write", async () => {
 });
 
 test("write no pretty", async () => {
-  return writeJSON("/test/file.json", { ok: true }, { pretty: false }).then((success) => {
+  return writeJSON("/test/file.json", { ok: true }, { pretty: false }).then(async (success) => {
     expect(success).toBe(true);
     return readFile("/test/file.json").then((text) => {
       expect(text).toBe('{"ok":true}\n');
@@ -32,7 +32,7 @@ test("write no pretty", async () => {
 });
 
 test("write no newline", async () => {
-  return writeJSON("/test/file.json", { ok: true }, { appendNewline: false }).then((success) => {
+  return writeJSON("/test/file.json", { ok: true }, { appendNewline: false }).then(async (success) => {
     expect(success).toBe(true);
     return readFile("/test/file.json").then((text) => {
       expect(text).toBe('{\n  "ok": true\n}');
