@@ -1,4 +1,5 @@
-<div align="center">
+<!--BEGIN HEADER-->
+<div id="top" align="center">
   <h1>write-json-safe</h1>
   <a href="https://npmjs.com/package/write-json-safe">
     <img alt="NPM" src="https://img.shields.io/npm/v/write-json-safe.svg">
@@ -6,20 +7,29 @@
   <a href="https://github.com/bconnorwhite/write-json-safe">
     <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/write-json-safe.svg">
   </a>
-  <a href='https://coveralls.io/github/bconnorwhite/write-json-safe?branch=master'>
+  <a href="https://coveralls.io/github/bconnorwhite/write-json-safe?branch=master">
     <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/write-json-safe.svg?branch=master">
-  </a>
-  <a href="https://github.com/bconnorwhite/write-json-safe">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/write-json-safe?label=Stars%20Appreciated%21&style=social">
-  </a>
-  <a href="https://twitter.com/bconnorwhite">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
   </a>
 </div>
 
 <br />
 
-> Write formatted JSON to a file.
+<blockquote align="center">Write formatted JSON to a file.</blockquote>
+
+<br />
+
+_If I should maintain this repo, please ⭐️_
+<a href="https://github.com/bconnorwhite/write-json-safe">
+  <img align="right" alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/write-json-safe?label=%E2%AD%90%EF%B8%8F&style=social">
+</a>
+
+_DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or suggestions._
+<a href="https://twitter.com/bconnorwhite">
+  <img align="right" alt="Twitter" src="https://img.shields.io/twitter/url?label=%40bconnorwhite&style=social&url=https%3A%2F%2Ftwitter.com%2Fbconnorwhite">
+</a>
+
+---
+<!--END HEADER-->
 
 ## Installation
 
@@ -31,7 +41,11 @@ yarn add write-json-safe
 npm install write-json-safe
 ```
 
-## API
+```sh
+pnpm add write-json-safe
+```
+
+## Usage
 
 ```ts
 import { writeJSON, writeJSONSync, Options, JSONObject } from "write-json-safe";
@@ -60,24 +74,32 @@ type Options = {
 }
 ```
 
+<!--BEGIN FOOTER-->
+
 <br />
 
-<h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/write-json-safe.svg"></h2>
+<h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/write-json-safe?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/write-json-safe.svg"></a></h2>
 
 - [stringify-json-object](https://www.npmjs.com/package/stringify-json-object): Stringify and format a JSON object
-- [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files, and create parent directories if necessary
+- [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files atomically, and create parent directories if necessary
+
 
 <br />
 
-<h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/write-json-safe.svg"></h2>
+<h3>Dev Dependencies</h3>
 
-- [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
+- [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): TypeScript definitions for mock-fs
+- [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
+- [mock-fs](https://www.npmjs.com/package/mock-fs): A configurable mock file system.  You know, for testing.
+- [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
+
 
 <br />
 
-<h2>License <img align="right" alt="license" src="https://img.shields.io/npm/l/write-json-safe.svg"></h2>
+<h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/write-json-safe.svg"></a></h2>
 
 [MIT](https://opensource.org/licenses/MIT)
+<!--END FOOTER-->
 
 <br />
 
