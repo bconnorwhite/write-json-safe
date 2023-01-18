@@ -1,3 +1,7 @@
+# [3.0.0](https://github.com/bconnorwhite/write-json-safe/compare/v2.1.0...v3.0.0) (2023-01-18)
+
+
+
 # [2.1.0](https://github.com/bconnorwhite/write-json-safe/compare/v2.0.2...v2.1.0) (2021-04-13)
 
 
