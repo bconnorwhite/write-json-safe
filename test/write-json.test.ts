@@ -22,6 +22,24 @@ test("write", async () => {
   });
 });
 
+test("write no undefined", async () => {
+  return writeJSON("/test/file.json", { ok: true, b: undefined }).then(async (success) => {
+    expect(success).toBe(true);
+    return readFile("/test/file.json").then((text) => {
+      expect(text).toBe('{\n  "ok": true\n}\n');
+    });
+  });
+});
+
+test("write string", async () => {
+  return writeJSON("/test/file.json", "test").then(async (success) => {
+    expect(success).toBe(true);
+    return readFile("/test/file.json").then((text) => {
+      expect(text).toBe('"test"\n');
+    });
+  });
+});
+
 test("write no pretty", async () => {
   return writeJSON("/test/file.json", { ok: true }, { pretty: false }).then(async (success) => {
     expect(success).toBe(true);

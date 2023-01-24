@@ -48,11 +48,11 @@ pnpm add write-json-safe
 ## Usage
 
 ```ts
-import { writeJSON, writeJSONSync, Options, JSONObject } from "write-json-safe";
+import { writeJSON, writeJSONSync, Options, OptionalJSONValue } from "write-json-safe";
 
-function writeJSON(path: string, content?: JSONObject, options?: Options): Promise<boolean>;
+function writeJSON(path: string, content?: OptionalJSONValue, options?: Options): Promise<boolean>;
 
-function writeJSONSync(path: string, content?: JSONObject, options?: Options): boolean;
+function writeJSONSync(path: string, content?: OptionalJSONValue, options?: Options): boolean;
 
 type Options = {
   /**
@@ -71,7 +71,7 @@ type Options = {
    * Write even if file already exists. Default: `true`
    */
   overwrite?: boolean;
-}
+};
 ```
 
 <!--BEGIN FOOTER-->
@@ -82,7 +82,6 @@ type Options = {
 
 - [stringify-json-object](https://www.npmjs.com/package/stringify-json-object): Stringify and format a JSON object
 - [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files atomically, and create parent directories if necessary
-
 
 <br />
 
@@ -105,6 +104,7 @@ type Options = {
 
 ## Related Packages
 
+- [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
 - [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
 - [read-json-safe](https://www.npmjs.com/package/read-json-safe): Read JSON files without try catch
 - [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files, and create parent directories if necessary
