@@ -1,6 +1,6 @@
 {
   "name": "write-json-safe",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Write formatted JSON to a file",
   "license": "MIT",
   "private": false,
